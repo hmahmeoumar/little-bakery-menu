@@ -49,19 +49,32 @@ const MENU = [
     ]
   },
   {
-    id: "patisseries",
-    title: "Gâteaux & Cheesecakes",
-    tag: "Cakes",
-    full: true,
+    id: "gateaux",
+    title: "Gâteaux",
+    tag: "100-150 MRU",
     items: [
       { fr: "Brownies", price: 100 },
       { fr: "Gâteau Citron", price: 100 },
       { fr: "Carrot Cake", price: 150 },
       { fr: "Gâteau Chocolat", price: 150 },
       { fr: "Gâteau Coco", price: 150 },
+    ]
+  },
+  {
+    id: "cheesecakes",
+    title: "Cheesecakes",
+    tag: "150 MRU",
+    items: [
       { fr: "Cheesecake Fraise", price: 150 },
       { fr: "Cheesecake Oreo", price: 150 },
       { fr: "Cheesecake Mangue", price: 150 },
+    ]
+  },
+  {
+    id: "tiramisu",
+    title: "Tiramisu",
+    tag: "150 MRU",
+    items: [
       { fr: "Tiramisu Classique", price: 150 },
       { fr: "Tiramisu Blueberry & Citron", price: 150 },
       { fr: "Tiramisu Fraise & Coco", price: 150 },
@@ -83,23 +96,23 @@ const MENU = [
   {
     id: "cheesecake-complet",
     title: "Cheesecake Complet",
-    tag: "13 000 MRU",
+    tag: "1 300 MRU",
     items: [
-      { fr: "Oreo & Chocolat", price: 13000 },
-      { fr: "Lotus", price: 13000 },
-      { fr: "Fruit Rouge", price: 13000 },
-      { fr: "Mangue", price: 13000 },
+      { fr: "Oreo & Chocolat", price: 1300 },
+      { fr: "Lotus", price: 1300 },
+      { fr: "Fruit Rouge", price: 1300 },
+      { fr: "Mangue", price: 1300 },
     ]
   },
   {
     id: "charlotte-complet",
     title: "Charlotte Complet",
-    tag: "13 000 MRU",
+    tag: "1 300 MRU",
     items: [
-      { fr: "Fraise & Coco", price: 13000 },
-      { fr: "Mangue", price: 13000 },
-      { fr: "Citron & Blueberry", price: 13000 },
-      { fr: "Tiramisu", price: 13000 },
+      { fr: "Fraise & Coco", price: 1300 },
+      { fr: "Mangue", price: 1300 },
+      { fr: "Citron & Blueberry", price: 1300 },
+      { fr: "Tiramisu", price: 1300 },
     ]
   },
   {
@@ -107,7 +120,7 @@ const MENU = [
     title: "Brownies Complet",
     tag: "Format complet",
     items: [
-      { fr: "Brownies Complet", price: 6000 },
+      { fr: "Brownies Complet", price: 600 },
     ]
   }
 ];
