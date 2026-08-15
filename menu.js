@@ -1,66 +1,116 @@
 // ------------------------------------------------------------------
 // MENU DATA — modifie ce tableau pour ajouter / changer des produits.
 // "price" est en MRU (Ouguiya).
+// "full: true" fait passer une catégorie sur toute la largeur (utile
+// pour les catégories avec beaucoup de produits).
 // ------------------------------------------------------------------
 const MENU = [
   {
-    id: "cafe",
-    title: "Café",
-    tag: "Coffee",
+    id: "cookies",
+    title: "Cookies",
+    tag: "80 MRU",
     items: [
-      { fr: "Espresso", en: null, desc: "Ristretto court et intense", price: 150 },
-      { fr: "Cappuccino", en: null, desc: "Mousse de lait onctueuse", price: 250 },
-      { fr: "Café Latte", en: null, desc: "Doux et crémeux", price: 280 },
-      { fr: "Café Mocha", en: null, desc: "Espresso, chocolat, lait chaud", price: 300 },
+      { fr: "Classique", price: 80 },
+      { fr: "Kinder", price: 80 },
+      { fr: "Chocolat & Caramel", price: 80 },
+      { fr: "Spéculos", price: 80 },
+      { fr: "Marshmallow", price: 80 },
+    ]
+  },
+  {
+    id: "cookies-cups",
+    title: "Cookies Cups",
+    tag: "50 MRU",
+    items: [
+      { fr: "Chocolat", price: 50 },
+      { fr: "Caramel", price: 50 },
+      { fr: "El Mordjane", price: 50 },
     ]
   },
   {
     id: "jus",
-    title: "Jus de Fruits Frais",
+    title: "Les Jus",
     tag: "Fresh Juices",
     items: [
-      { fr: "Jus de Mangue", en: "Mango", price: 350 },
-      { fr: "Jus de Banane", en: "Banana", price: 300 },
-      { fr: "Jus d'Orange", en: "Orange", price: 300 },
-      { fr: "Jus de Fraise", en: "Strawberry", price: 350 },
-      { fr: "Jus de Pastèque", en: "Watermelon", price: 320 },
+      { fr: "Mangue", price: 100 },
+      { fr: "Avocat", price: 100 },
+      { fr: "Trio Tropical", price: 150 },
     ]
   },
   {
     id: "milkshakes",
     title: "Milkshakes",
-    tag: "Milkshakes",
+    tag: "150 MRU",
     items: [
-      { fr: "Milkshake Vanille", en: "Vanilla", price: 450 },
-      { fr: "Milkshake Chocolat", en: "Chocolate", price: 450 },
-      { fr: "Milkshake Fraise", en: "Strawberry", price: 480 },
-      { fr: "Milkshake Caramel", en: "Caramel", price: 480 },
+      { fr: "Fraise", price: 150 },
+      { fr: "Blueberry", price: 150 },
+      { fr: "Spéculos", price: 150 },
+      { fr: "Bueno", price: 150 },
     ]
   },
   {
-    id: "cookies",
-    title: "Cookies",
-    tag: "Cookies",
+    id: "patisseries",
+    title: "Gâteaux & Cheesecakes",
+    tag: "Cakes",
+    full: true,
     items: [
-      { fr: "Pépites de Chocolat", en: "Chocolate Chip", price: 150 },
-      { fr: "Double Chocolat", en: "Double Chocolate", price: 180 },
-      { fr: "Noix de Coco", en: "Coconut", price: 160 },
-      { fr: "Beurre de Cacahuète", en: "Peanut Butter", price: 170 },
+      { fr: "Brownies", price: 100 },
+      { fr: "Gâteau Citron", price: 100 },
+      { fr: "Carrot Cake", price: 150 },
+      { fr: "Gâteau Chocolat", price: 150 },
+      { fr: "Gâteau Coco", price: 150 },
+      { fr: "Cheesecake Fraise", price: 150 },
+      { fr: "Cheesecake Oreo", price: 150 },
+      { fr: "Cheesecake Mangue", price: 150 },
+      { fr: "Tiramisu Classique", price: 150 },
+      { fr: "Tiramisu Blueberry & Citron", price: 150 },
+      { fr: "Tiramisu Fraise & Coco", price: 150 },
+    ]
+  },
+  {
+    id: "verrines",
+    title: "Verrines",
+    tag: "100 MRU",
+    full: true,
+    items: [
+      { fr: "Oreo Chocolat", price: 100 },
+      { fr: "Spéculos", price: 100 },
+      { fr: "Raffaello", price: 100 },
+      { fr: "Tiramisu", price: 100 },
+      { fr: "Fraise", price: 100 },
+    ]
+  },
+  {
+    id: "cheesecake-complet",
+    title: "Cheesecake Complet",
+    tag: "13 000 MRU",
+    items: [
+      { fr: "Oreo & Chocolat", price: 13000 },
+      { fr: "Lotus", price: 13000 },
+      { fr: "Fruit Rouge", price: 13000 },
+      { fr: "Mangue", price: 13000 },
+    ]
+  },
+  {
+    id: "charlotte-complet",
+    title: "Charlotte Complet",
+    tag: "13 000 MRU",
+    items: [
+      { fr: "Fraise & Coco", price: 13000 },
+      { fr: "Mangue", price: 13000 },
+      { fr: "Citron & Blueberry", price: 13000 },
+      { fr: "Tiramisu", price: 13000 },
+    ]
+  },
+  {
+    id: "brownies-complet",
+    title: "Brownies Complet",
+    tag: "Format complet",
+    items: [
+      { fr: "Brownies Complet", price: 6000 },
     ]
   }
 ];
-
-const DESSERTS = {
-  id: "desserts",
-  title: "Desserts au Chocolat",
-  tag: "Chocolate Desserts",
-  items: [
-    { fr: "Fondant au Chocolat", en: "Fondant", price: 450 },
-    { fr: "Brownie Maison", en: "Homemade Brownie", price: 380 },
-    { fr: "Mousse au Chocolat", en: "Mousse", price: 400 },
-    { fr: "Tarte au Chocolat", en: "Chocolate Tart", price: 420 },
-  ]
-};
 
 function formatPrice(p){
   return p.toLocaleString('fr-FR') + " MRU";
@@ -85,7 +135,7 @@ function renderItemRow(it){
 
 function renderCategory(cat){
   return `
-    <section id="${cat.id}">
+    <section id="${cat.id}" class="${cat.full ? 'full' : ''}">
       <div class="cat-head">
         <h2>${cat.title}</h2>
         <span class="tag">${cat.tag}</span>
@@ -100,19 +150,6 @@ function renderCategory(cat){
 function render(){
   const main = document.getElementById('menu');
   main.innerHTML = MENU.map(renderCategory).join('');
-
-  const full = document.createElement('div');
-  full.className = 'full-section';
-  full.innerHTML = `
-    <div class="cat-head">
-      <h2>${DESSERTS.title}</h2>
-      <span class="tag">${DESSERTS.tag}</span>
-    </div>
-    <div class="full-grid">
-      ${DESSERTS.items.map(renderItemRow).join('')}
-    </div>
-  `;
-  document.querySelector('.page').appendChild(full);
 }
 
 render();
