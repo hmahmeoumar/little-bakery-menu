@@ -91,6 +91,18 @@ const MENU = [
       { fr: "Raffaello", price: 100 },
       { fr: "Tiramisu", price: 100 },
       { fr: "Fraise", price: 100 },
+      { fr: "Crème de Mangue", price: 100 },
+    ]
+  },
+  {
+    id: "sandwich",
+    title: "Sandwich",
+    tag: "120-180 MRU",
+    items: [
+      { fr: "César Sandwich", price: 180 },
+      { fr: "Croque Monsieur", price: 150 },
+      { fr: "Croissant Jambon", price: 120 },
+      { fr: "Sandwich au Thon", price: 120 },
     ]
   },
   {
